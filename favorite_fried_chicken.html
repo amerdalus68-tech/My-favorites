@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Food - Fried Chicken</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f7f0df;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 35px 18px;
+    }
+
+    .page {
+      width: min(760px, 100%);
+      background: #fffdf7;
+      padding: 42px 55px 48px;
+      box-shadow: 0 8px 30px rgba(70, 45, 20, .14);
+      border: 1px solid #e4d7bd;
+      position: relative;
+    }
+
+    .page::before {
+      content: "";
+      position: absolute;
+      left: 28px;
+      right: 28px;
+      top: 22px;
+      border-top: 2px solid #c98235;
+      opacity: .5;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
+      text-align: center;
+      color: #b9472f;
+      font-size: clamp(38px, 7vw, 58px);
+      line-height: 1.05;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #3d3a37;
+      font-size: clamp(25px, 4vw, 34px);
+      font-weight: bold;
+      margin: 0;
+      font-style: italic;
+    }
+
+    .underline {
+      width: 78%;
+      height: 9px;
+      margin: 10px auto 28px;
+      border-top: 2px solid #8e4b2d;
+      border-bottom: 2px solid #8e4b2d;
+      transform: rotate(-1deg);
+      opacity: .65;
+    }
+
+    .food-card {
+      width: min(520px, 100%);
+      margin: 0 auto 28px;
+      border: 1px solid #d9c5a3;
+      background: #f3ead8;
+      padding: 10px;
+      box-shadow: 0 5px 15px rgba(60, 40, 20, .12);
+    }
+
+    .food-image {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      background: #d9b27d;
+    }
+
+    .caption {
+      text-align: center;
+      margin: 9px 0 2px;
+      font-size: 14px;
+      color: #765b43;
+      font-style: italic;
+    }
+
+    .description {
+      max-width: 610px;
+      margin: 0 auto;
+      font-size: 21px;
+      line-height: 1.65;
+      color: #55504b;
+    }
+
+    .description strong {
+      color: #a6402c;
+    }
+
+    .recipe-link {
+      display: block;
+      width: fit-content;
+      margin: 25px auto 0;
+      color: #496b8a;
+      font-size: 18px;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .recipe-link:hover {
+      color: #b9472f;
+    }
+
+    @media (max-width: 600px) {
+      .page { padding: 34px 22px 38px; }
+      .description { font-size: 18px; }
+      .page::before { left: 15px; right: 15px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <h1>My Favorite Food</h1>
+    <h2 class="subtitle">Fried Chicken</h2>
+    <div class="underline"></div>
+
+    <div class="food-card">
+      <!-- Replace this image URL with your own fried chicken photo if you want. -->
+      <img
+        class="food-image"
+        src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=1000&q=85"
+        alt="Crispy fried chicken">
+      <p class="caption">Crispy, golden, and delicious!</p>
+    </div>
+
+    <p class="description">
+      <strong>Fried chicken</strong> is my favorite food. I love its crispy,
+      golden coating and juicy, flavorful chicken. I enjoy eating it with
+      warm rice and sharing it with my family.
+    </p>
+
+    <a
+      class="recipe-link"
+      href="https://www.google.com/search?q=how+to+cook+crispy+fried+chicken"
+      target="_blank"
+      rel="noopener noreferrer">
+      Learn how to cook Fried Chicken
+    </a>
+  </main>
+</body>
+</html>
